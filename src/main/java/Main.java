@@ -7,7 +7,9 @@ public class Main {
     public static void main(String[] args) throws Exception {
         //JavaUtilMail.sendMail("wrightdj99@gmail.com");
         Scanner scan = new Scanner(System.in);
-        System.out.println("Welcome to Mailchamp!");
+        System.out.println("---------------------------------");
+        System.out.println("Welcome to Mailchamp!           |");
+        System.out.println("---------------------------------");
         System.out.println("Enter your Gmail username: ");
         String senderAccount = scan.nextLine();
         System.out.println("Enter your Gmail password: ");
