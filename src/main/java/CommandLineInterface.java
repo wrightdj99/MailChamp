@@ -14,7 +14,7 @@ public class CommandLineInterface {
         String senderAccount = scan.nextLine();
         System.out.println("Enter your Gmail password: ");
         String senderPassword = scan.nextLine();
-        System.out.println("Who is this message being sent to? You can choose up to 5");
+        System.out.println("Who is this message being sent to? You can add up to 20 recipients");
         String recipient = scan.nextLine();
 
         //char [] password = cons.readPassword("Enter your Gmail password: ");
@@ -26,7 +26,7 @@ public class CommandLineInterface {
             mailingList.add(recipient);
         }*/
         JavaUtilMail javaUtilMail = new JavaUtilMail();
-        JavaUtilMail.sendMail(senderAccount, senderPassword, recipient);
+        javaUtilMail.sendMail(senderAccount, senderPassword, recipient);
             //System.out.println(mailingList.get(x));
         //System.out.println("Your username: " + senderAccount);
         //System.out.println("Your password: " + senderPassword);
